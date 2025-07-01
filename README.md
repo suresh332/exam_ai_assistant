@@ -43,18 +43,19 @@ This project is a **Retrieval-Augmented Generation (RAG)** based AI assistant th
 
 ## 📂 Project Structure
 
-ai-exam-assistant/
-│
-├── app/
-│ ├── embedder.py # OCR, chunking, and FAISS indexing
-│ ├── rag_chain.py # Loads LLM and builds LangChain RAG chain
-│ ├── streamlit_app.py # Streamlit UI for end-to-end pipeline
-│
-├── sample_input/
-│ └── sample_text.txt # Sample text-based input
-│
-├── requirements.txt # All dependencies
-├── README.md # Project documentation
+i-exam-assistant/
+├── app/ # Application package (can include utilities, helpers)
+├── embedder.py # OCR, text chunking, and FAISS vector indexing
+├── rag_chain.py # Loads LLM and builds LangChain RAG pipeline
+├── streamlit_app.py # Streamlit UI for end-to-end RAG pipeline
+├── sample_input/ # Folder for example inputs
+│ └── sample_text.txt # Sample text-based input for testing
+├── requirements.txt # All Python dependencies
+└── README.md # Project documentation (this file)
+
+Copy
+Edit
+
 
 
 📌 Why This Project?
